@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    height: 8vh;
+}
+
+nav > ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 2em;
+}
+
+.container img{
+    height: 35vh;
+}
+
+#p1{
+    justify-self: center;
+    padding-bottom: 2em;
+}
+
+#informacao{
+    margin: auto;
+    padding: 1.5em;
+}
+
+span{
+    position: sticky;
+   font-size: 4em;
+   bottom: 0;
+   float: right;
+   
+}
