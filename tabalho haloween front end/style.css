@@ -16,8 +16,20 @@ nav > ul{
     display: flex;
     gap: 2em;
     list-style: none;
+    align-items: center;
 }
 
+li > img{
+   height: 5vh;
+}
+
+#img {
+    transition: transform 0.3s ease;
+  }
+
+main{
+    height: calc(100vh - 16vh);
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -26,17 +38,30 @@ nav > ul{
 }
 
 .container img{
-    height: 35vh;
+    height: 30vh;
 }
 
 #p1{
     justify-self: center;
     padding-bottom: 2em;
+    text-align: center;
+}
+
+button{
+    padding: .5em;
+    font-weight:500 ;
+    cursor: pointer;
+    margin-top: 5%;
+    width: 100%;
 }
 
 #informacao{
-    margin: auto;
-    padding: 1.5em;
+    margin:  auto;
+    padding: 1em;
+    border: 1px solid black;
+    font-weight: 800;
+
+
 }
 
 span{
@@ -45,4 +70,12 @@ span{
    bottom: 0;
    float: right;
    
+}
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    height: 8vh;
+    color: white;
 }

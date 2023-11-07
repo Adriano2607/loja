@@ -1,23 +1,30 @@
-const carrinho = document.getElementById("carrinho")
+const carrinho = document.getElementById("img")
 
-const button = document.getElementById("button")
+const button = document.getElementsByTagName("button")
 let car= 0
 const info = document.getElementById("informacao")
 
 
-button.addEventListener("click",function(){
+for (let index = 0; index < button.length; index++) {
+   button[index].addEventListener("click",function(){
 
 
 
-   info.showModal() 
-    car++
-    carrinho.innerHTML = "qtd:" +car
-   
-    setTimeout(() => {
-        info.close()
-    }, 4000);
-   
-})
+    info.showModal() 
+     car++
+     carrinho.style.transform = "scale(1.5)";
+     carrinho.innerHTML = car
+
+     
+    
+     setTimeout(() => {
+         info.close()
+         carrinho.style.transform = "scale(1)";
+     }, 1000);
+    
+ })
+    
+}
 
 
 
