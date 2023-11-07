@@ -1,15 +1,28 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 header{
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     height: 8vh;
+    padding: 0 8em;
+}
+
+header img{
+    height: 7vh;
+    
 }
 
 nav > ul{
@@ -20,11 +33,12 @@ nav > ul{
 }
 
 li > img{
-   height: 5vh;
+   height: 4vh;
 }
 
 #img {
     transition: transform 0.3s ease;
+    font-size: 1.5em;
   }
 
 main{
@@ -34,7 +48,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 2em;
+    align-items: center;
+    height: 100%;
 }
 
 .container img{
@@ -43,25 +58,33 @@ main{
 
 #p1{
     justify-self: center;
-    padding-bottom: 2em;
     text-align: center;
 }
 
 button{
     padding: .5em;
-    font-weight:500 ;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 5%;
     width: 100%;
+    margin-top: 5%;
+    border-radius: 10px;
+    border:none ;
+    
+}
+
+
+.texto{
+    padding: .5em;
+    
 }
 
 #informacao{
-    margin:  auto;
+    margin:  1% auto;
     padding: 1em;
-    border: 1px solid black;
-    font-weight: 800;
-
-
+    font-weight: bold;
+    background-color: rgb(37, 37, 119);
+    color: white;
+    border: none;
 }
 
 span{
@@ -74,7 +97,8 @@ span{
 
 
 footer{
-    text-align: center;
+    display: grid;
+    place-items: center;
     background-color: black;
     height: 8vh;
     color: white;

@@ -8,11 +8,9 @@ const info = document.getElementById("informacao")
 for (let index = 0; index < button.length; index++) {
    button[index].addEventListener("click",function(){
 
-
-
     info.showModal() 
      car++
-     carrinho.style.transform = "scale(1.5)";
+     carrinho.style.transform = "scale(2.7)";
      carrinho.innerHTML = car
 
      
