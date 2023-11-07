@@ -17,7 +17,7 @@ header{
     justify-content: space-between;
     color: white;
     height: 8vh;
-    padding: 0 8em;
+    padding: 0 3em;
 }
 
 header img{
@@ -37,8 +37,10 @@ li > img{
 }
 
 #img {
-    transition: transform 0.3s ease;
-    font-size: 1.5em;
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.6em;
+    width: 20px; 
+    text-align: center;
   }
 
 main{
@@ -54,9 +56,29 @@ main{
 
 .container img{
     height: 30vh;
+    width:12vw;
 }
 
-#p1{
+li > a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    display: flex;
+    align-items: center;
+
+}
+
+
+li > img{
+margin-right: 1em;
+
+}
+
+
+.p1{
+
     justify-self: center;
     text-align: center;
 }
@@ -79,7 +101,7 @@ button{
 }
 
 #informacao{
-    margin:  1% auto;
+    margin:  .5% auto;
     padding: 1em;
     font-weight: bold;
     background-color: rgb(37, 37, 119);
@@ -87,13 +109,6 @@ button{
     border: none;
 }
 
-span{
-    position: sticky;
-   font-size: 4em;
-   bottom: 0;
-   float: right;
-   
-}
 
 
 footer{
